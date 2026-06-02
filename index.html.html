@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segredo da Colina | Hospedagem de Luxo na Chapada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-ouro: #c5a059;
+            --cor-fundo: #0a0a0a;
+            --cor-texto: #e4e4e4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--cor-fundo); color: var(--cor-texto); font-family: 'Inter', sans-serif; overflow-x: hidden; }
+
+        /* Vídeo Fullscreen */
+        .hero { position: relative; height: 100vh; width: 100%; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .hero video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+        .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1; }
+        .hero-content { position: relative; z-index: 2; text-align: center; }
+        .hero-content h1 { font-family: 'Playfair Display', serif; font-size: 4rem; letter-spacing: 5px; }
+
+        /* Seções de Galeria/Conteúdo */
+        section { padding: 80px 20px; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .card { background: #1a1a1a; padding: 20px; transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-10px); }
+
+        /* Botões de Ação */
+        .btn-reserva { display: inline-block; padding: 15px 30px; background: var(--cor-ouro); color: #000; text-decoration: none; font-weight: 600; margin-top: 20px; }
+        
+        /* WhatsApp Floating */
+        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; z-index: 100; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="seuvideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Segredo da Colina</h1>
+            <p>O refúgio perfeito na Chapada dos Veadeiros</p>
+            <a href="#reservas" class="btn-reserva">Reservar Agora</a>
+        </div>
+    </section>
+
+    </body>
+</html>
